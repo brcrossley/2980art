@@ -35,6 +35,7 @@ public class GenerateImage {
                 break;
             case 3:
                 Circles.createImage(preview, bi, width, height, clusterSize, colors, r);
+                break;
         }
     }
 
@@ -45,7 +46,9 @@ public class GenerateImage {
             return 1;
         else if(s.equals("Rectangles"))
             return 2;
-        else
+        else if(s.equals("Circles"))
             return 3;
+        else
+            return 4;
     }
 }

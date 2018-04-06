@@ -16,7 +16,7 @@ public class Snow {
             }
         }
         if(!preview)
-            ImageIO.write(bi, "png", new File("out.png"));
+            FileChooser.chooseFile(bi);
         else
             new Preview(bi);
     }
